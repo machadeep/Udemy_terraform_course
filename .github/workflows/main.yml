@@ -12,7 +12,7 @@ jobs:
         id: ksecrets
         uses: Keeper-Security/ksm-action@master
         with:
-          keeper-secret-config: ${{ secrets.KSM_CONFIG }}
+          keeper-secret-config: ${{ secrets.DEMO_SECRET }}
           secrets: |
               uid123/field/password > PASSWORD
               uid234/field/password > env:PASSWORD
